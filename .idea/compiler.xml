@@ -9,12 +9,14 @@
         <module name="003-swagger" />
         <module name="001-helloworld" />
         <module name="002-zookeeper" />
+        <module name="004-docker" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="001-helloworld" target="1.8" />
       <module name="002-zookeeper" target="1.8" />
       <module name="003-swagger" target="1.8" />
+      <module name="004-docker" target="1.8" />
       <module name="spring-boot-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>

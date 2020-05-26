@@ -12,6 +12,7 @@
         <module>001-helloworld</module>
         <module>002-zookeeper</module>
         <module>003-swagger</module>
+        <module>004-docker</module>
     </modules>
 
     <properties>
