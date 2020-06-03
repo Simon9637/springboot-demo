@@ -13,6 +13,7 @@
         <module>002-zookeeper</module>
         <module>003-swagger</module>
         <module>004-docker</module>
+        <module>005-elasticsearch</module>
     </modules>
 
     <properties>
@@ -21,15 +22,29 @@
         <java.version>1.8</java.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <spring.boot.version>2.0.2.RELEASE</spring.boot.version>
-        <mysql.version>8.0.12</mysql.version>
         <guava.version>22.0</guava.version>
+        <lombok.version>1.16.20</lombok.version>
+        <spring.boot.version>2.3.0.RELEASE</spring.boot.version>
+        <mysql.version>8.0.12</mysql.version>
         <zk.version>3.6.1</zk.version>
         <swagger.version>2.9.2</swagger.version>
+        <spring.data.elasticsearch.version>4.0.0.RELEASE</spring.data.elasticsearch.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
@@ -51,6 +66,11 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-elasticsearch</artifactId>
+                <version>${spring.data.elasticsearch.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
