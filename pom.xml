@@ -26,7 +26,7 @@
         <lombok.version>1.16.20</lombok.version>
         <spring.boot.version>2.3.0.RELEASE</spring.boot.version>
         <mysql.version>8.0.12</mysql.version>
-        <zk.version>3.6.1</zk.version>
+        <zk.version>3.7.2</zk.version>
         <swagger.version>2.9.2</swagger.version>
         <spring.data.elasticsearch.version>4.0.0.RELEASE</spring.data.elasticsearch.version>
     </properties>
